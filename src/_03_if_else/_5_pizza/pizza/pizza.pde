@@ -4,6 +4,7 @@ PImage pepperoni;
 void setup() {
  
  size(500,500);
+ background(200);
 fill(#F0D400);
 ellipse(250,250,400,400);
 pepperoni = loadImage("download.jpeg");
@@ -22,4 +23,9 @@ image(pepperoni, mouseX, mouseY);
 }
 if(mousePressed && (mouseButton == CENTER)){
 image(peppers, mouseX, mouseY);}
+if (keyPressed){
+  background(200);
+  fill(#F0D400);
+ellipse(250,250,400,400);
+}
 }
